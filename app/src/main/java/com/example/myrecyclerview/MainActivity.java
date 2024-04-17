@@ -37,5 +37,7 @@ public class MainActivity extends AppCompatActivity {
         list.add(new NewUser("cndjf6","12345678","nsansjn @gmail"));
         list.add(new NewUser("cnjdn7djf","123456789","nsansjn @gmail"));
 
+        Adpater adpater = new Adpater(list,this);
+        recyclerView.setAdapter(adpater);
     }
 }
